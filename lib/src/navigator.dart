@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:animations/animations.dart';
 import 'package:h_enterprise/page/about.dart';
 import 'package:h_enterprise/page/home.dart';
-
+import 'package:h_enterprise/page/profile.dart';
+//import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 //import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 
 class NavigatorItem extends StatefulWidget {
@@ -17,42 +18,49 @@ class _NavigatorItemState extends State<NavigatorItem> {
   final List<Widget> _windgetOption = <Widget>[
     const Home(),
     const About(),
+    const Profile(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        bottomNavigationBar: BottomNavigationBar(
-          selectedItemColor: Theme.of(context).colorScheme.primary,
-
-          //selectedColorOpacity: 0.2,
-          currentIndex: _selectedIndex,
-
-          onTap: (i) => setState(() => _selectedIndex = i),
-          items: const [
+        appBar: AppBar(
+          elevation: 0,
+          scrolledUnderElevation: 0,
+          centerTitle: true,
+          title: const Text(
+            'Haluu',
+          ),
+        ),
+        bottomNavigationBar: NavigationBar(
+          selectedIndex: _selectedIndex,
+          onDestinationSelected: (i) => setState(() => _selectedIndex = i),
+          destinations: const [
             /// Home
-            BottomNavigationBarItem(
+            NavigationDestination(
               icon: Icon(Icons.home_outlined),
               label: "Home",
-              activeIcon: Icon(Icons.home),
+              selectedIcon: Icon(Icons.home_rounded),
             ),
 
-            /// Likes
-            BottomNavigationBarItem(
+            /// About
+            NavigationDestination(
               icon: Icon(Icons.info_outline_rounded),
-              label: "About",
-              activeIcon: Icon(Icons.info_rounded),
+              label: "About Us",
+              selectedIcon: Icon(Icons.info_rounded),
             ),
 
-            /// Search
+            /// Profile
+            NavigationDestination(
+              icon: Icon(Icons.person_outline_rounded),
+              label: "Profile",
+              selectedIcon: Icon(Icons.person_rounded),
+            ),
           ],
         ),
         floatingActionButton: FloatingActionButton(
-          backgroundColor: Theme.of(context).colorScheme.primary,
-          //shape: CircleBorder(),
-          foregroundColor: Theme.of(context).colorScheme.onPrimary,
           onPressed: () {},
-          child: const Icon(Icons.chat),
+          child: const Icon(Icons.chat_outlined),
         ),
         body: PageTransitionSwitcher(
           duration: const Duration(milliseconds: 350),

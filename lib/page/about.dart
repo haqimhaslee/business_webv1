@@ -8,15 +8,6 @@ class About extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 3,
-        scrolledUnderElevation: 3,
-        centerTitle: true,
-        title: const Text(
-          'About',
-        ),
-      ),
-      //Add using FAB
       body: ListView(
         children: [
           Container(

@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'H Enterprise',
+      //title: 'H Enterprise',
       theme: ThemeData(
         //fontFamily: 'GoogleSans',
         //colorScheme: lightDynamic ?? lightColorScheme,
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       themeMode: ThemeMode.system,
-      debugShowCheckedModeBanner: false,
+      //debugShowCheckedModeBanner: false,
       home: const NavigatorItem(),
     );
   }

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-//import 'package:utp_in_me/pages/srcutp/srcutp_popup.dart';
-//import 'package:utp_in_me/pages/ucs.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -8,15 +6,6 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 3,
-        scrolledUnderElevation: 3,
-        centerTitle: true,
-        title: const Text(
-          'Home',
-        ),
-      ),
-      //Add using FAB
       body: ListView(
         children: [
           Container(
