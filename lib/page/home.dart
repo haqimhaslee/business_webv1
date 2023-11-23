@@ -100,7 +100,7 @@ class Home extends StatelessWidget {
                                         decoration: const BoxDecoration(
                                           image: DecorationImage(
                                               image: AssetImage(
-                                                  "lib/assets/1.jpg"),
+                                                  "lib/assets/wiring.jpg"),
                                               fit: BoxFit.cover),
                                         ),
                                         child: SizedBox(
@@ -153,7 +153,7 @@ class Home extends StatelessWidget {
                                 bottom: 10,
                               ),
                               child: Text(
-                                'Wiring',
+                                'Wiring/Electrical',
                                 textAlign: TextAlign.left,
                                 style: TextStyle(
                                     fontSize: 16, fontWeight: FontWeight.w800),
@@ -221,7 +221,7 @@ class Home extends StatelessWidget {
                                         decoration: const BoxDecoration(
                                           image: DecorationImage(
                                               image: AssetImage(
-                                                  "lib/assets/1.jpg"),
+                                                  "lib/assets/plumbing.jpeg"),
                                               fit: BoxFit.cover),
                                         ),
                                         child: SizedBox(
@@ -274,7 +274,7 @@ class Home extends StatelessWidget {
                                 bottom: 10,
                               ),
                               child: Text(
-                                'Piping',
+                                'Plumbing',
                                 textAlign: TextAlign.left,
                                 style: TextStyle(
                                     fontSize: 16, fontWeight: FontWeight.w800),

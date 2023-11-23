@@ -33,3 +33,5 @@ flutter:
     - web/assets/fonts/MaterialIcons-Regular.ttf
     - lib/assets/1.jpg
     - lib/assets/IoT.png
+    - lib/assets/plumbing.jpeg
+    - lib/assets/wiring.jpg
